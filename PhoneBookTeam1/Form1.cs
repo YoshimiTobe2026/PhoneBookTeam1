@@ -16,5 +16,10 @@ namespace PhoneBookTeam1
         {
             InitializeComponent();
         }
+
+        private void nameList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

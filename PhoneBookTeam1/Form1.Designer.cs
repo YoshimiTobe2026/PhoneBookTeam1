@@ -40,6 +40,7 @@
             this.nameList.Name = "nameList";
             this.nameList.Size = new System.Drawing.Size(250, 274);
             this.nameList.TabIndex = 0;
+            this.nameList.SelectedIndexChanged += new System.EventHandler(this.nameList_SelectedIndexChanged);
             // 
             // phoneNumber
             // 
