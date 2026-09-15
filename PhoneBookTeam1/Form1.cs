@@ -61,7 +61,15 @@ namespace PhoneBookTeam1
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-
+            string keyword = searchBox.Text.Trim();
+            nameList.Items.Clear();
+            foreach (PhoneData data in phoneBook)
+            {
+                if (data.Name.Contains(keyword))
+                {
+                    nameList.Items.Add(data.Name);
+                }
+            }
         }
     }
 }
