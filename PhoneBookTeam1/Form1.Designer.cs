@@ -32,7 +32,7 @@
             this.phoneNumber = new System.Windows.Forms.TextBox();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelTel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -71,14 +71,14 @@
             this.searchButton.UseVisualStyleBackColor = true;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
-            // label1
+            // labelTel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(445, 84);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 15);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "電話番号";
+            this.labelTel.Location = new System.Drawing.Point(445, 84);
+            this.labelTel.Name = "labelTel";
+            this.labelTel.Size = new System.Drawing.Size(192, 15);
+            this.labelTel.TabIndex = 4;
+            this.labelTel.Text = "電話番号";
+            this.labelTel.DoubleClick += new System.EventHandler(this.labelTel_DoubleClick);
             // 
             // label2
             // 
@@ -105,7 +105,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelTel);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.phoneNumber);
@@ -123,7 +123,7 @@
         private System.Windows.Forms.TextBox phoneNumber;
         private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.Button searchButton;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelTel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
     }
