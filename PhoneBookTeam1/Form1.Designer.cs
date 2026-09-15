@@ -30,6 +30,8 @@
         {
             this.nameList = new System.Windows.Forms.ListBox();
             this.phoneNumber = new System.Windows.Forms.TextBox();
+            this.searchBox = new System.Windows.Forms.TextBox();
+            this.searchButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nameList
@@ -49,11 +51,30 @@
             this.phoneNumber.Size = new System.Drawing.Size(189, 22);
             this.phoneNumber.TabIndex = 1;
             // 
+            // searchBox
+            // 
+            this.searchBox.Location = new System.Drawing.Point(448, 288);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(189, 22);
+            this.searchBox.TabIndex = 2;
+            // 
+            // searchButton
+            // 
+            this.searchButton.Location = new System.Drawing.Point(448, 343);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(75, 23);
+            this.searchButton.TabIndex = 3;
+            this.searchButton.Text = "button1";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.searchButton);
+            this.Controls.Add(this.searchBox);
             this.Controls.Add(this.phoneNumber);
             this.Controls.Add(this.nameList);
             this.Name = "Form1";
@@ -67,6 +88,8 @@
 
         private System.Windows.Forms.ListBox nameList;
         private System.Windows.Forms.TextBox phoneNumber;
+        private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.Button searchButton;
     }
 }
 
