@@ -71,5 +71,12 @@ namespace PhoneBookTeam1
                 }
             }
         }
+
+
+        private void labelTel_DoubleClick(object sender, EventArgs e)
+        {
+            var num = 99999999999;
+            labelTel.Text = num.ToString();
+        }
     }
 }
